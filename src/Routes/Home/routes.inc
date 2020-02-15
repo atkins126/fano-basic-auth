@@ -6,13 +6,5 @@
  * @license   [[LICENSE_URL]] ([[LICENSE]])
  *------------------------------------------------------------- *)
 
-container.add('appMiddlewares', TMiddlewareListFactory.create());
-
-container.add(
-    GuidToString(IDispatcher),
-    TDispatcherFactory.create(
-        container['appMiddlewares'] as IMiddlewareLinkList,
-        getRouteMatcher(),
-        TRequestResponseFactory.create()
-    )
-);
+router.get('/', container['homeController'] as IRequestHandler)
+    .add(container['basicAuthMiddleware'] as IMiddleware);

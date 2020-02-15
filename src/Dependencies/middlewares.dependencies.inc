@@ -8,4 +8,9 @@
 
 {%dependencies.inc}
 
-{---put your dependencies registration here---}
+container.add(
+    'basicAuthMiddleware',
+    TStaticCredentialsBasicAuthMiddlewareFactory.create('fano-realm')
+        .addCredential('hello@fano', 'world')
+        .addCredential('hi@fano', 'nice')
+);

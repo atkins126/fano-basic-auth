@@ -6,5 +6,4 @@
  * @license   [[LICENSE_URL]] ([[LICENSE]])
  *------------------------------------------------------------- *)
 
-
-{$INCLUDE middleware.support.dependencies.inc}
+{$INCLUDE middlewares.dependencies.inc}
