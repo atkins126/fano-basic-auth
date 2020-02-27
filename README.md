@@ -1,6 +1,6 @@
 # HTTP Basic Authentication example web application
 
-Web application skeleton using Fano Framework, Pascal web application framework that demonstrate how to use HTTP Basic Authentication ([RFC 2617](https://tools.ietf.org/html/rfc2617)).
+Web application skeleton using Fano Framework, Pascal web application framework that demonstrate how to use [HTTP Basic Authentication](https://fanoframework.github.io/security/http-authentication) ([RFC 2617](https://tools.ietf.org/html/rfc2617)).
 
 This project is generated using [Fano CLI](https://github.com/fanoframework/fano-cli)
 command line tools to help scaffolding web application using Fano Framework.
